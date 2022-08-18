@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>Etch-A-Sketch</h1>
+        <p>Size : <span id="currentSize"></span></p>
+        <p>Pen Status : <span id="mode"></span></p>
+    </div>
+    <div class="content">
+        <div class="buttons">
+            <button class="size">Size</button>
+            <button class="reset" onclick="reset()">Reset</i></button>
+            <button class="defaultColor" onclick="changeColor('black')">Black</button>
+            <button class="randomColor" onclick="changeColor('random')">Random</button>
+            <button class="eraser" onclick="changeColor('white')">Eraser</button>
+        </div>
+    
+        <div class="container">
+            <div class="board"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
